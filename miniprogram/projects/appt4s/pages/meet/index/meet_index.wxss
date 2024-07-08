@@ -1,0 +1,123 @@
+@import "../../../../../style/public/comm_box_list.wxss";
+@import "../../../style/skin.wxss";
+
+
+.main {
+	padding: 0rpx;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 30rpx;
+}
+
+.list .item {
+	position: relative;
+	width: 100%;
+	display: flex;
+	background-color: #fff;
+	padding: 0 20rpx 0 0;
+	overflow: hidden;
+	border-radius: 10rpx;
+	border-bottom-left-radius: 30rpx;
+	border-top-right-radius: 30rpx;
+	margin-bottom: 40rpx;
+}
+
+.list .item .left {
+	width: 220rpx;
+	height: 220rpx;
+	margin-right: 20rpx;
+	border-top-left-radius: 10rpx;
+	border-bottom-left-radius: 30rpx;
+}
+
+.list .item .left image {
+	width: inherit;
+	height: inherit;
+	border-top-left-radius: 10rpx;
+	border-bottom-left-radius: 30rpx;
+	border-top-right-radius: 30rpx;
+	box-shadow: 12rpx 0rpx 10rpx rgba(216, 220, 223, 0.8);
+}
+
+.list .item .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 12rpx 10rpx;
+	align-items: flex-start;
+	padding-bottom: 5rpx;
+	justify-content: space-between;
+}
+
+.list .item .right .title {
+	width: 100%;
+	font-size: 30rpx;
+	font-weight: bold;
+	border-bottom: 2rpx dotted #ddd;
+	padding: 5rpx 0rpx 15rpx 0;
+	color: #000;
+	margin-bottom: 10rpx;
+}
+
+.list .item .right .desc {
+	width: 100%;
+	color: #888;
+	font-size: 24rpx;
+	margin-top: 14rpx;
+	height: 65rpx;
+}
+
+.list .item .right .tag-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list .item .right .tag-list>text {
+	padding: 4rpx 10rpx;
+	font-size: 22rpx;
+	margin-right: 10rpx;
+	margin-bottom: 10rpx;
+	background-color: #f2f2f2;
+	border-radius: 6rpx;
+	color: var(--projectCompareColor); 
+}
+
+
+
+.list .item .right .line {
+	width: 100%;
+	color: #999;
+	font-size: 24rpx;
+	padding: 6rpx 0; 
+	display: flex;
+	justify-content: flex-start; 
+}
+
+.list .item .right .tag-list .tag {
+	padding: 5rpx 10rpx;
+	background-color: #f2f2f2;
+	margin-right: 5rpx;
+	border-radius: 5rpx;
+	margin-bottom: 11rpx;
+	margin-top: 5rpx;
+	color: #999;
+}
+
+.list .item .level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--projectColor);
+	color: #000;
+	padding: 5rpx 15rpx;
+	border-top-left-radius: 10rpx;
+	border-bottom-right-radius: 10rpx;
+	font-size: 24rpx;
+	z-index: 99999;
+}

@@ -1,0 +1,248 @@
+@import "../../../../../style/public/comm_box_list.wxss";
+@import "../../../style/skin.wxss";
+
+.main {
+	padding: 0rpx 0rpx 100rpx;
+}
+
+.up {
+	width: 100%;
+}
+
+.up image {
+	width: 100%;
+	height: 400rpx;
+}
+
+.down {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0rpx 00rpx;
+	margin-top: 0rpx;
+	z-index: 9999;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10rpx 10rpx;
+}
+
+.menu .item {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 180rpx;
+	margin-bottom: 12rpx;
+}
+
+.menu .item .item-inner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu .item .item-inner .img {
+	width: 105rpx;
+	height: 105rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 42%;
+	background-image: linear-gradient(45deg, #FF4446, #FF4446, #FF4446);  
+} 
+ 
+
+.menu .item-inner .img image {
+	width: 60rpx;
+	height: 60rpx;
+}
+
+.menu .item-inner .title {
+	margin-top: 20rpx;
+	font-size: 24rpx;
+	color: #000;
+}
+
+.guide {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0rpx 20rpx 20rpx;
+	margin-top: 10rpx;
+}
+
+.guide .title {
+	width: 100%;
+	font-size: 32rpx;
+	font-weight: bold;
+	padding: 30rpx 0rpx;
+	letter-spacing: 3rpx;
+}
+
+.guide .item {
+	width: 100%;
+	display: flex;
+	color: #fff;
+	overflow: hidden;
+}
+
+.guide .item .left {
+	width: 350rpx;
+	background-image: linear-gradient(105deg, #FF4446, #FF4446);
+	height: 300rpx;
+	border-radius: 4rpx;
+	padding: 30rpx 20rpx;
+	margin-right: 20rpx;
+	position: relative;
+	border-top-left-radius: 70rpx;
+	border-bottom-right-radius: 70rpx;
+}
+
+.guide .item .left image {
+	position: absolute;
+	top: 60rpx;
+	left: -40rpx;
+	z-index: 1;
+	width: 200rpx;
+	height: 200rpx;
+	background-color: transparent;
+	opacity: .1;
+}
+
+.guide .item .left .line1 {
+	font-size: 32rpx;
+	margin-bottom: 20rpx;
+	z-index: 9;
+	position: relative;
+	margin-left: 12rpx;
+	margin-top: 4rpx;
+	color: #fff;
+}
+
+.guide .item .left .line2 {
+	font-size: 28rpx;
+	z-index: 9;
+	position: relative;
+}
+
+.guide .item .left .order {
+	font-size: 24rpx;
+	z-index: 9;
+	position: absolute;
+	right: 30rpx;
+	bottom: 40rpx;
+	background-color: #fff;
+	color: #000;
+	padding: 8rpx 30rpx;
+	border-radius: 40rpx;
+	font-size: 24rpx;
+}
+
+.guide .item .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.guide .item .right .line {
+	width: 100%;
+	background-image: linear-gradient(105deg, #3CC0BF, #3CC0BF);
+	border-radius: 4rpx;
+	padding: 20rpx 20rpx;
+	height: 140rpx;
+	position: relative;
+}
+
+.guide .item .right image {
+	position: absolute;
+	bottom: 10rpx;
+	right: 0;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	z-index: 1;
+	width: 100rpx;
+	height: 100rpx;
+}
+
+.guide .item .right .line:first-child {
+	margin-bottom: 20rpx;
+	border-bottom-left-radius: 40rpx;
+}
+
+.guide .item .right .line:last-child {
+	background-image: linear-gradient(105deg, #4DBB91, #4DBB91);
+	border-top-left-radius: 40rpx;
+}
+
+.guide .item .right .line .txt1 {
+	font-size: 30rpx;
+	margin-bottom: 10rpx;
+	z-index: 9;
+	position: relative;
+	color: #fff;
+}
+
+.guide .item .right .line .txt2 {
+	font-size: 24rpx;
+	z-index: 9;
+	position: relative;
+	opacity: .8;
+}
+
+.down-list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 20rpx 30rpx;
+	background-color: #fff;
+	margin-top: 10rpx;
+}
+
+.down-list .item {
+	width: 100%;
+	display: flex;
+	border-bottom: 2rpx dotted #ffb4b5;
+	padding: 16rpx 0;
+}
+
+.down-list .item:last-child {
+	border-bottom: 0;
+}
+
+.down-list .item .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.down-list .item .left .line1 {
+	color: #333;
+	font-size: 26rpx;
+	font-weight: bold;
+}
+
+
+.down-list .item .left .line2 {
+	color: #aaa;
+	font-size: 22rpx;
+	margin-top: 10rpx;
+	display: flex;
+	justify-content: space-between;
+}
+
+.down-list .item .right {
+	margin-left: 16rpx;
+}
+
+.down-list .item .right>image {
+	width: 180rpx;
+	height: 110rpx;
+	border-radius: 6rpx;
+}
